@@ -42,14 +42,16 @@ export const SearchBox = styled.div`
   }
 `;
 export const TableRow = styled.tr`
-  background-color: #f9f9f9;
+  background-color: #fff;
   border: 1px solid #ddd;
+  :nth-of-type(odd) {
+    background-color: #f9f9f9;
 `;
 export const TableHead = styled.th`
   background: #337ab7;
-  border-right: 1px solid #fff;
   color: white;
   user-select: none;
+  border: 1px solid #ddd;
   &.Sorting {
     width: 45px;
     padding: 5px;
@@ -123,7 +125,7 @@ export const TableHead = styled.th`
     }
   }
   &.Date {
-    width: 116px;
+    width: 117px;
     padding: 5px;
     cursor: pointer;
     svg {
@@ -142,6 +144,7 @@ export const TableCell = styled.td`
 `;
 export const Pagination = styled.div`
   display: flex;
+  width: 168px;
   margin-left: auto;
   margin-top: 10px;
 `;
