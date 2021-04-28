@@ -196,7 +196,7 @@ const Datatable = () => {
     },
   ];
 
-  const [sort, setSort] = useState("number");
+  const [sort, setSort] = useState("");
   const [sorted, setSorted] = useState(dataset);
   const [search, setSearch] = useState("");
   return (
